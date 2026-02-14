@@ -40,11 +40,11 @@ const winner=()=>{
         if(pos1!="" && pos2!="" && pos3!=""){
             if(pos1==pos2 && pos2==pos3){
                 w.innerText="Winner is"+currentPlayer;
+                msg.style.display="flex";
                 for(let b of btn){
                     b.disabled=true;
                 }
             }
-            msg.style.display="flex";
         }
     };
 };
